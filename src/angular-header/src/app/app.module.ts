@@ -4,6 +4,7 @@ import { enableProdMode } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { APP_BASE_HREF } from '@angular/common';
 
+import { LoaderService } from './loader.service.ts';
 import { AppComponent } from './app.component.ts';
 
 @NgModule({
@@ -18,7 +19,7 @@ class AppRoutingModule { }
     AppRoutingModule,
     BrowserModule,
   ],
-  providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  providers: [LoaderService, { provide: APP_BASE_HREF, useValue: '/' }],
   // register our component with the module
   declarations: [
     AppComponent
