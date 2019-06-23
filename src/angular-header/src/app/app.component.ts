@@ -25,9 +25,9 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.loaderService.load();
-    console.log('loaded');
-    this.add('my-web-component');
+    // this.loaderService.load();
+    // console.log('loaded');
+    // this.add('my-web-component');
   }
 
   onClick(evt: any) {

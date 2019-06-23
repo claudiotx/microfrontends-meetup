@@ -28,9 +28,9 @@ export default class Root extends React.Component {
     })
   }
 
-  sendMessage(evt) {
-    evt.preventDefault();
-    e.emit('message', { text: 'bubblegum' })
+  sendMessage(msg) {
+    // evt.preventDefault();
+    e.emit('message', { text: msg })
   }
 
   render() {
@@ -46,7 +46,7 @@ export default class Root extends React.Component {
                 </h1>
                 <main className="mw6 center">
                   <article>
-                    <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={this.sendMessage}>
+                    <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={() => this.sendMessage('Grid Systems')}>
                       <div className="dtc w3">
                         <img src="http://mrmrs.github.io/images/0010.jpg" className="db w-100" />
                       </div>
@@ -61,7 +61,7 @@ export default class Root extends React.Component {
                     </a>
                   </article>
                   <article>
-                  <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={this.sendMessage}>
+                  <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={() => this.sendMessage('History of the Poster')}>
                       <div className="dtc w3">
                         <img src="http://mrmrs.github.io/images/0002.jpg" className="db w-100" />
                       </div>
@@ -76,7 +76,7 @@ export default class Root extends React.Component {
                     </a>
                   </article>
                   <article>
-                  <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={this.sendMessage}>
+                  <a className="link dt w-100 bb b--black-10 pb2 mt2 dim blue" href="javascript:;" onClick={() => this.sendMessage('Graphic Design in IBM')}>
                       <div className="dtc w3">
                         <img src="http://mrmrs.github.io/images/0004.jpg" className="db w-100" />
                       </div>

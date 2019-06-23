@@ -23,7 +23,7 @@ import e from '../event-bus'
             <div class="fl-l w-50-l tl tc-ns pt3 pt4-m pt6-l">
               <a class="f6 f5-ns fw6 dib ba b--black-20 bg-blue white ph3 ph4-ns pv2 pv3-ns br2 grow no-underline"
                 href="/#/">
-                Go to another path! <code class="f6 fw4 di"></code>
+                Go home! <code class="f6 fw4 di"></code>
               </a>
             </div>
           </div>
